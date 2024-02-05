@@ -1,0 +1,26 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "types": [
+      "offscreencanvas"
+    ]
+  },
+  "files": [
+    "main.ts",
+    "polyfills.ts"
+  ],
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts",
+    "extensions/*/*.ext.ts",
+    "packages/*/*.ts",
+    "packages/*/*/*.ts"
+  ],
+  "angularCompilerOptions": {
+    "enableIvy": true
+  }
+}

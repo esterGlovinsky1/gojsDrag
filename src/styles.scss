@@ -1,0 +1,219 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "../node_modules/primeng/resources/primeng.min.css"; */
+@import "../node_modules/primeflex/primeflex.scss";
+@import "../node_modules/primeicons/primeicons.css";
+@import "../node_modules/prismjs/themes/prism-coy.css";
+@import "../node_modules/@fullcalendar/core/main.min.css";
+@import "../node_modules/@fullcalendar/daygrid/main.min.css";
+@import "../node_modules/@fullcalendar/timegrid/main.min.css";
+
+html {
+  font-size: 100%;
+}
+
+
+// p-dialog
+.p-dialog.stored {
+
+  .header-icons,
+  .p-dialog-header-icons,
+  .p-dialog-content {
+    display: none;
+  }
+
+  .p-dialog-header {
+    width: 200px;
+  }
+}
+
+.p-dialog {
+  transform: initial;
+}
+
+.p-dialog.p-component {
+  max-height: 99%;
+  background-color: gainsboro;
+
+  .store-icon {
+    margin-left: auto;
+    padding-right: 5px;
+    color: rgba(0, 0, 0, 0.6);
+
+    i {
+      font-size: 15px;
+    }
+  }
+
+  .store-icon:hover {
+    cursor: pointer;
+  }
+
+  .ui-resizable-se {
+    position: absolute;
+    height: 14px;
+    width: 14px;
+
+    &.resize-right {
+      height: calc(100% - 28px);
+      cursor: e-resize;
+      top: 17px;
+      width: 5px;
+      right: -3px;
+    }
+
+    &.resize-bottom {
+      width: calc(100% - 28px);
+      cursor: n-resize;
+      left: 17px;
+      bottom: 0px;
+      height: 5px;
+    }
+
+    &.resize-top {
+      width: calc(100% - 28px);
+      top: -3px;
+      left: 17px;
+      cursor: n-resize;
+      height: 5px;
+    }
+
+    &.resize-left {
+      height: calc(100% - 28px);
+      left: -3px;
+      cursor: e-resize;
+      top: 17px;
+      width: 5px;
+    }
+
+    &.resize-left-top {
+      left: -3px;
+      top: -3px;
+      cursor: se-resize;
+    }
+
+    &.resize-right-top {
+      top: -3px;
+      right: -3px;
+      cursor: sw-resize;
+    }
+
+    &.resize-left-bottom {
+      left: -3px;
+      cursor: sw-resize;
+      bottom: -3px;
+    }
+
+    &.resize-right-bottom {
+      right: -3px;
+      cursor: se-resize;
+      bottom: -3px;
+    }
+  }
+
+  .p-dialog-header {
+    padding: 1.2rem;
+    background-color: gray;
+
+    .p-dialog-title {
+      color: black;
+      padding-left: 0.625rem;
+      // height: 20px;
+      overflow: hidden;
+    }
+
+    .p-dialog-header-icons {
+      .p-dialog-header-maximize {
+        margin-right: 2px;
+        height: 18px;
+      }
+
+      .p-dialog-header-close {
+        width: max-content;
+        height: max-content;
+
+        .p-dialog-header-close-icon {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .p-dialog-footer {
+    padding: 10px 5px 10px 5px;
+  }
+
+  .p-dialog-content {
+    padding: 0.5em 0.75em;
+  }
+
+  &.dynamic-dialog,
+  &.dialog-styles,
+  &.search-overlay,
+  &.ok-search-overlay {
+    width: 80%;
+    border: 1px solid #bdbdbd;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    border-radius: 3px;
+
+    .p-dialog-content {
+      height: 80vh;
+      overflow: hidden;
+    }
+  }
+
+  &.message-dialog {
+    .p-dialog-content {
+      overflow-y: unset;
+    }
+  }
+
+  &.provisioning-dialog {
+    width: 95%;
+
+    .p-dialog-content.p-component-content {
+      padding: 0px !important;
+    }
+  }
+}
+
+
+
+
+.p-datepicker-timeonly {
+  background-color: #3e464c !important;
+  color: white;
+  padding: 0;
+
+  .p-timepicker button {
+    color: white;
+    height: max-content;
+  }
+}
+
+.p-timepicker.p-component-header {
+  background-color: #3e464c;
+}
+
+//save-button
+.p-dialog-buttonpane.p-component-content {
+  margin: 15px 10px 0 0;
+  display: flex;
+  justify-content: flex-end;
+
+  .p-button.p-component {
+    width: max-content;
+
+    span.p-button-icon {
+      margin-right: 10px;
+    }
+  }
+}
+
+//settings
+.header-settings {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px 0 15px;
+  height: 70px;
+}
+
